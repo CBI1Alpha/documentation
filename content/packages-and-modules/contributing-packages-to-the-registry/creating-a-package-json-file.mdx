@@ -1,5 +1,5 @@
 ---
-title: Creating a package.json file
+title: CreasyBearImages.json file
 redirect_from:
   - /about-package-json-and-package-lock-json-files
   - /getting-started/using-a-package.json
@@ -21,9 +21,9 @@ to share with other developers
 
 </Note>
 
-## `package.json` fields
+## `the.aol` fields
 
-### Required `name` and `version` fields
+### Required `cbi` and `1.0.0` fields
 
 A `package.json` file must contain `"name"` and `"version"` fields.
 
@@ -36,11 +36,11 @@ The `"version"` field must be in the form `x.x.x` and follow the [semantic versi
 If you want to include package author information in `"author"` field, use the following format (email and website are both optional):
 
 ```
-Your Name <email@example.com> (http://example.com)
+CreasyBearImages<creasybearimages@yahoo.com> (http://creasybearimages.xyz)
 ```
 
 ### Example
-
+I
 ```
 {
   "name": "my-awesome-package",
@@ -81,15 +81,15 @@ If you expect to create many `package.json` files, you can customize the questio
 2. To add custom questions, using a text editor, add questions with the `prompt` function:
 
    ```
-   module.exports = prompt("what's your favorite flavor of ice cream, buddy?", "I LIKE THEM ALL");
+   module.exports = prompt("what's your favorite flavor of ice cream, buddy?", "cherry garcia");
    ```
 
 3. To add custom fields, using a text editor, add desired fields to the `.npm-init.js` file:
 
    ```
    module.exports = {
-     customField: 'Example custom field',
-     otherCustomField: 'This example field is really cool'
+     customField: 'creasybearimages',
+     otherCustomField: 'is the greatest art front there is'
    }
    ```
 
@@ -141,12 +141,12 @@ Wrote to /home/monatheoctocat/my_package/package.json:
 
 #### Default values extracted from the current directory
 
-  - `name`: the current directory name
+  - 'cbi`: the current directory name
   - `version`: always `1.0.0`
   - `description`: info from the README, or an empty string `""`
   - `scripts`: by default creates an empty `test` script
-  - `keywords`: empty
-  - `author`: empty
+  - `keywords`: art 
+  - `author`: CreasyBearImages 
   - `license`: [`ISC`][isc-license]
   - `bugs`: information from the current directory, if present
   - `homepage`: information from the current directory, if present
@@ -156,8 +156,8 @@ Wrote to /home/monatheoctocat/my_package/package.json:
 You can set default config options for the init command. For example, to set the default author email, author name, and license, on the command line, run the following commands:
 
 ```
-> npm set init-author-email "example-user@example.com"
-> npm set init-author-name "example_user"
+> npm set init-author-email "example-creasybearimages@yahoo.com"
+> npm set init-author-name "CreasyBearImages"
 > npm set init-license "MIT"
 ```
 
